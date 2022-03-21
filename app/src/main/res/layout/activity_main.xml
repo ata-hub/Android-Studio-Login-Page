@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Sign in"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:layout_margin="50dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:layout_below="@+id/signin"
+        android:hint="username"
+        android:background="#30ffffff"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+        android:drawablePadding="15dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:layout_below="@+id/username"
+        android:hint="password"
+        android:background="#30ffffff"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+        android:drawablePadding="15dp"
+        android:inputType="textPassword"/>
+<com.google.android.material.button.MaterialButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/loginbutton"
+    android:text="Login"
+    android:layout_below="@+id/password"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="15dp"
+
+    />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/donthaveaccount"
+    android:text="Forgot Password?"
+    android:layout_centerHorizontal="true"
+    android:textColor="@color/white"
+    android:id="@+id/forgotpass"
+    android:layout_margin="15dp"/>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginbutton"
+        android:text="Don't have an account?"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:id="@+id/donthaveaccount"
+        android:layout_margin="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/socialicons"
+        android:text="or login with"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:id="@+id/others"
+        android:layout_margin="15dp"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:id="@+id/socialicons"
+    android:gravity="center">
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="15dp"
+        android:src="@drawable/google"
+        android:id="@+id/google_btn"
+
+        />
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="15dp"
+        android:src="@drawable/fb"/>
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="15dp"
+        android:src="@drawable/twitter"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
